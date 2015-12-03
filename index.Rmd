@@ -29,10 +29,9 @@ cat("</ul>")
 
 As little as possible. The aim is to be very lightweight. But it does do this:
 
-1. Incldues an index page (you're looking at it).
-2. Creates a table of contents for every `.Rmd` file in the root directory of your project.
-3. Inserts a link into each rendered HTML file back to the index and to the repository (if you want).
-4. Sets some shared options for rendering HTML from R Markdown.
+1. Includes an index page (you're looking at it) with a table of contents for every `.Rmd` file in the root directory of your project.
+2. Inserts a navigation header into each rendered HTML file.
+4. Sets some shared options for HTML documents rendered from R Markdown.
 5. Contains a basic Makefile to render all the documents.
   
 If you want to get fancy, you can add these two lines to the `[remote "origin"]` section of your `.git/config` file, so that any `git push` command will push to both the `master` and the `gh-pages` branch. Or you can just rename `master` to `gh-pages`. (This tip from [Brett Terpstra](http://brettterpstra.com/2012/09/26/github-tip-easily-sync-your-master-to-github-pages/), who gives more details.)

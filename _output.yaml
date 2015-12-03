@@ -1,0 +1,7 @@
+html_document:
+  theme: default
+  includes:
+    in_header: www-lib/header.html
+    before_body: www-lib/prefix_body.html
+    after_body: www-lib/suffix_body.html
+

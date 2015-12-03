@@ -1,0 +1,15 @@
+---
+title: "First page of the notebook"
+author: "Lincoln Mullen"
+date: "December 3, 2015"
+---
+
+Let's use an [HTML widget](http://www.htmlwidgets.org/).
+
+```{r}
+library("leaflet")
+# From `?leaflet::leaflet`
+m <-  leaflet() %>% addTiles()
+m %>% addPopups(-93.65, 42.0285,
+                'Here is the <b>Department of Statistics</b>, ISU')
+```

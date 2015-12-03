@@ -1,0 +1,14 @@
+---
+title: "Second page of the notebook"
+author: "Lincoln Mullen"
+date: "December 3, 2015"
+---
+
+## This is a header
+
+Let's plot iris.
+
+```{r}
+plot(iris)
+```
+

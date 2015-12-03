@@ -8,4 +8,4 @@ all : $(NOTEBOOKS)
 
 .PHONY : clean
 clean :
-	rm -rf *.html
+	rm -rf $(NOTEBOOKS)

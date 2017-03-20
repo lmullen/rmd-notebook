@@ -34,13 +34,6 @@ As little as possible. The aim is to be very lightweight. But it does do this:
 4. Sets some shared options for HTML documents rendered from R Markdown.
 5. Contains a basic Makefile to render all the documents.
   
-If you want to get fancy, you can add these two lines to the `[remote "origin"]` section of your `.git/config` file, so that any `git push` command will push to both the `master` and the `gh-pages` branch. Or you can just rename `master` to `gh-pages`. (This tip from [Brett Terpstra](http://brettterpstra.com/2012/09/26/github-tip-easily-sync-your-master-to-github-pages/), who gives more details.)
-
-```
-push = +refs/heads/master:refs/heads/gh-pages
-push = +refs/heads/master:refs/heads/master
-```
-
-Don't forget to commit the HTML files that you generate.
+Don't forget to commit the HTML files that you generate. You can then configure GitHub to create a web page from the master branch, as [explained here](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/).
 
 See the [GitHub repository](https://github.com/lmullen/rmd-notebook) for the source. See the [R Markdown documentation](http://rmarkdown.rstudio.com/) if you want to do more.
